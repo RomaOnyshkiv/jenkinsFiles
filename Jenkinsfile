@@ -8,7 +8,11 @@ pipeline {
 
     stages {
         stage('Stage 1') {
-            echo "stage 1"
+            steps {
+                script {
+                    sh 'echo stage_1'
+                }
+            }
         }
     }
 
